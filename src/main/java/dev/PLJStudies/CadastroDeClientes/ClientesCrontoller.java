@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class ClientesCrontoller {
 
-    @GetMapping
+
+    @GetMapping("/boasvindas")
     public String boasVindas() {
-        return "Páginda de boas vindas";
+        return "Página de boas vindas";
     }
+
 }
