@@ -3,18 +3,16 @@ package dev.PLJStudies.CadastroDeClientes;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_cadastro") // Nome da tabela
+@Table(name = "cliente") // Nome da tabela
 public class ClientesModel {
 
-
     @Id
-
     // Usado para falar como vamos implementar a tatica de gerar o Id automaticamente
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Nesse caso, a ESTRATEGIA (strategy) utilizada foi o IDENTITY (identificar por numeros)
-    Long id;
-    String nome;
-    String cpf;
-    String email;
+    private Long id;
+    private String nome;
+    private String cpf;
+    private String email;
 
     // No args constructor
     public ClientesModel() {
