@@ -1,4 +1,4 @@
-package dev.PLJStudies.CadastroDeClientes;
+package dev.PLJStudies.CadastroDeClientes.Clientes;
 
 import jakarta.persistence.*;
 
@@ -10,8 +10,11 @@ public class ClientesModel {
     // Usado para falar como vamos implementar a tatica de gerar o Id automaticamente
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Nesse caso, a ESTRATEGIA (strategy) utilizada foi o IDENTITY (identificar por numeros)
     private Long id;
+
     private String nome;
+
     private String cpf;
+
     private String email;
 
     // No args constructor
